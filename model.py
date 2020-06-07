@@ -9,20 +9,10 @@ import numpy as np
 from sklearn import datasets
 from sklearn.model_selection import train_test_split
 #import data
+import utils
 
 np.set_printoptions(suppress=True)
 
-def sigmoid(x):
-    return 1 / (1 + np.exp(-x))
-
-def relu(x):
-    return np.max(x, np.zeros(x.shape[0]))
-
-def softmax(x):
-    return np.exp(x)/sum(np.exp(x))
-
-def identity(x):
-    return x
 
 class Layer:
     def __init__(self, nodes, activation):
@@ -123,7 +113,8 @@ class NeuralNetwork:
 
                 # Calculate derivatives using backpropagation.
                 if self.objective_fcn == "MSE":
-                    self.output_layer.delta = -(y_i - final_outputs)
+                    self.output_layer.delta = -(y_i - final_outputs) * \
+                                              (final_outputs)*(1-final_outputs)
                 delta = self.output_layer.delta
                 weights = self.output_layer.weights
                 for layer in self.layers:
@@ -181,11 +172,12 @@ if __name__ == "__main__":
     X_train, X_test, y_train, y_test = train_test_split(X, y.T, test_size=0.2)
     model = NeuralNetwork(input_nodes = X.shape[1],
                           output_nodes = y.shape[0],
-                          output_activation=softmax,
-                          objective_fcn="MSE")
-    model.add_layer(Layer(nodes=10, activation=sigmoid))
-    model.add_layer(Layer(nodes=10, activation=sigmoid))
-    model.fit(X_train, y_train.T, epochs=1000)
+                          output_activation=utils.softmax,
+                          objective_fcn="MSE",
+                          learning_rate=0.01)
+    #model.add_layer(Layer(nodes=10, activation=relu))
+    model.add_layer(Layer(nodes=10, activation=utils.sigmoid))
+    model.fit(X_train, y_train.T, epochs=100)
     #model.fit(X, y)
     model.evaluate(X_test, y_test.T)
     print("pause")
