@@ -15,13 +15,15 @@ np.set_printoptions(suppress=True)
 
 
 class Layer:
-    def __init__(self, nodes, activation):
+    def __init__(self, nodes, activation, activation_deriv):
         self.weights = []
         self.nodes = nodes
         self.activation = activation
+        self.activation_deriv = activation_deriv
         self.activations = np.zeros(self.nodes)
         self.z = np.zeros(self.nodes)
         self.delta = np.zeros(self.nodes)
+
 
     def initialize_weights(self, input_num):
         self.weights = np.random.rand(self.nodes, input_num) - 0.5
@@ -35,17 +37,18 @@ class Layer:
     # derivatives across the entire cost
     # function! http://neuralnetworksanddeeplearning.com/chap2.html
     def backpropagation(self, next_delta, next_weights):
-        self.delta = sum(next_delta @ next_weights) * \
-                     self.activations * (1 - self.activations)
+        #summation = np.sum(np.multiply(next_weights.T, next_delta).T, axis=0)
+        self.delta = np.multiply((next_weights.T @ next_delta), self.activation_deriv(self.z))
 
     def weight_update(self, learning_rate, prev_activations):
-        self.weights = self.weights - learning_rate * np.outer(self.delta,prev_activations)
+        self.weights = self.weights - learning_rate * np.outer(self.delta, prev_activations)
 
 class NeuralNetwork:
     def __init__(self,
                  input_nodes,
                  output_nodes,
                  output_activation,
+                 output_deriv,
                  objective_fcn = str,
                  learning_rate = 0.2):
         self.layers = []
@@ -53,8 +56,17 @@ class NeuralNetwork:
         self.input_nodes = input_nodes
         self.output_nodes = output_nodes
         self.learning_rate = learning_rate
+        if self.objective_fcn == "MSE":
+            self.objective_deriv = utils.MSE_deriv
+        elif self.objective_fcn == "BCE":
+            self.objective_deriv = utils.binary_crossentropy_deriv
+        elif self.objective_fcn == "MCE":
+            self.objective_deriv = utils.multiclass_crossentropy_deriv
+        else:
+            raise NotImplementedError
         self.output_layer = Layer(self.output_nodes,
-                                  output_activation)
+                                  output_activation,
+                                  output_deriv)
 
     def add_layer(self, layer):
         self.layers.append(layer)
@@ -78,14 +90,14 @@ class NeuralNetwork:
     # Online gradient descent training.
     # Assuming for multi-class classification,
     # y is already in one-hot form.
-    def fit(self, X, y, epochs = 10):
+    def fit(self, X, y, epochs = 10, include_bias = True):
 
         # Adding bias/intercept term
         # to X input as an initial
         # column of ones.
-        X = np.vstack((np.ones(X.shape[0]), X.T)).T
-        self.input_nodes = X.shape[1]
-        self.output_nodes = y.shape[0]
+        if include_bias:
+            self.input_nodes = self.input_nodes + 1
+            X = np.vstack((np.ones(X.shape[0]), X.T)).T
 
         # Randomly initializing layer weights.
         input_num = X.shape[1]
@@ -102,7 +114,11 @@ class NeuralNetwork:
             while choices != []:
                 index = choices.pop(0)
                 x_i = X[index,:]
-                y_i = y[:, index]
+
+                if output_nodes == 1:
+                    y_i = y[index]
+                else:
+                    y_i = y[:, index]
 
                 # Calculate f(x_i, w) using forward pass
                 # through all layers.
@@ -112,12 +128,12 @@ class NeuralNetwork:
                 final_outputs = self.output_layer.forward_pass(inputs)
 
                 # Calculate derivatives using backpropagation.
-                if self.objective_fcn == "MSE":
-                    self.output_layer.delta = -(y_i - final_outputs) * \
-                                              (final_outputs)*(1-final_outputs)
+                # self.output_layer.delta = np.multiply(self.objective_deriv(y_i, final_outputs),
+                #                                       self.output_layer.activation_deriv(self.output_layer.z))
+                self.output_layer.delta = self.objective_deriv(y_i, final_outputs)
                 delta = self.output_layer.delta
                 weights = self.output_layer.weights
-                for layer in self.layers:
+                for layer in self.layers[::-1]:
                     layer.backpropagation(delta, weights)
                     delta = layer.delta
                     weights = layer.weights
@@ -129,13 +145,17 @@ class NeuralNetwork:
                     activations = layer.activations
                 self.output_layer.weight_update(self.learning_rate, activations)
 
-    def evaluate(self, X, y):
+    def evaluate(self, X, y, binary=False):
         correct = 0
         incorrect = 0
         X = np.vstack((np.ones(X.shape[0]), X.T)).T
         for i in range(X.shape[0]):
             x_i = X[i, :]
-            y_i = y[:, i]
+
+            if binary:
+                y_i = y[i]
+            else:
+                y_i = y[:, i]
 
             # Calculate y_hat using forward pass
             # through all layers, then argmax.
@@ -164,20 +184,46 @@ def preprocess_iris(binary: bool = False, features: int = 4):
     iris = datasets.load_iris()
     y = iris.target
     X = iris.data
-    y_onehot = one_hot(y)
-    return X, y_onehot
+    if binary:
+        X = np.array([x_i for x_i, y_i in zip(X, y) if y_i != 2])
+        y = np.array([y_i for x_i, y_i in zip(X, y) if y_i != 2])
+    else:
+        y = one_hot(y)
+    return X, y
+
 
 if __name__ == "__main__":
-    X, y = preprocess_iris()
+    binary = True
+
+    X, y = preprocess_iris(binary=binary)
     X_train, X_test, y_train, y_test = train_test_split(X, y.T, test_size=0.2)
+
+    if binary:
+        output_nodes = 1
+    else:
+        output_nodes = y.shape[0]
+
     model = NeuralNetwork(input_nodes = X.shape[1],
-                          output_nodes = y.shape[0],
-                          output_activation=utils.softmax,
-                          objective_fcn="MSE",
+                          output_nodes = output_nodes,
+                          output_activation=utils.sigmoid,
+                          output_deriv = utils.sigmoid_deriv,
+                          objective_fcn="BCE",
                           learning_rate=0.01)
-    #model.add_layer(Layer(nodes=10, activation=relu))
-    model.add_layer(Layer(nodes=10, activation=utils.sigmoid))
-    model.fit(X_train, y_train.T, epochs=100)
+    model.add_layer(Layer(nodes=10,
+                          activation=utils.sigmoid,
+                          activation_deriv=utils.sigmoid_deriv))
+    model.add_layer(Layer(nodes=20,
+                          activation=utils.sigmoid,
+                          activation_deriv=utils.sigmoid_deriv))
+    # model.add_layer(Layer(nodes=10,
+    #                       activation=utils.sigmoid,
+    #                       activation_deriv=utils.sigmoid_deriv))
+    model.fit(X_train,
+              y_train.T,
+              epochs=100,
+              include_bias=True)
     #model.fit(X, y)
-    model.evaluate(X_test, y_test.T)
+    model.evaluate(X_test,
+                   y_test.T,
+                   binary=binary)
     print("pause")

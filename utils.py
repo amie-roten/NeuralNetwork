@@ -1,9 +1,5 @@
 import numpy as np
-from keras import activations as act
-from keras import losses as ls
-from scipy.special import softmax as scipy_softmax
-from sklearn.metrics import mean_squared_error, \
-                            log_loss
+
 
 ####
 ###
@@ -42,7 +38,7 @@ def identity(x):
 # Use for regression, single output
 # with identity function as activation.
 def MSE(y, y_hat):
-    all_sq_errors = [(y_i - y_hat_i) ** 2 \
+    all_sq_errors = [0.5 * ((y_hat_i - y_i) ** 2)\
                      for y_i, y_hat_i in zip(y, y_hat)]
     return (1 / len(y)) * sum(all_sq_errors)
 
@@ -54,8 +50,8 @@ def binary_crossentropy(y, y_hat):
 # Use for multi-class classification,
 # outputs equal to the number of classes,
 # with softmax as output activation.
-def categorical_crossentropy(y, y_hat):
-    return sum([binary_crossentropy(y_k, y_hat_k) \
+def multiclass_crossentropy(y, y_hat):
+    return -sum([y_k*np.log(y_hat_k) \
                 for y_k, y_hat_k in zip(y, y_hat)])
 
 
@@ -68,24 +64,34 @@ def tanh_deriv(x):
     return 1 - tanh(x)^2
 
 def sigmoid_deriv(x):
-    return sigmoid(x)(1-sigmoid(x))
+    return sigmoid(x)*(1-sigmoid(x))
 
 def relu_deriv(x):
     return np.where(x < 0, 0, 1)
 
 def softmax_deriv(x):
-    raise NotImplementedError
+    return softmax(np.identity(x.shape[0])-x)
 
 def identity_deriv(x):
     return np.ones(x.shape[1])
 
 def MSE_deriv(y, y_hat):
-    raise NotImplementedError
+    return (y_hat - y)
 
 def binary_crossentropy_deriv(y, y_hat):
-    raise NotImplementedError
+    return (y_hat - y)
+
+def multiclass_crossentropy_deriv(y, y_hat):
+    return (y_hat - y)
 
 if __name__ == "__main__":
+    from keras import activations as act
+    from keras import losses as ls
+    from keras import backend
+    from scipy.special import softmax as scipy_softmax
+    from sklearn.metrics import mean_squared_error, \
+        log_loss
+
     x = np.random.rand(10)
     y = np.random.rand(10)
     y_hat = np.random.rand(10)
@@ -104,4 +110,11 @@ if __name__ == "__main__":
     my_MSE = MSE(y, y_hat)
     sklearn_MSE = mean_squared_error(y, y_hat)
     assert np.allclose(my_MSE, sklearn_MSE)
+    my_mean_bce = np.mean(binary_crossentropy(y, y_hat))
+    keras_mean_bce = backend.eval(ls.binary_crossentropy(y, y_hat))
+    np.testing.assert_almost_equal(my_mean_bce, keras_mean_bce, decimal=5)
+    my_cce = categorical_crossentropy([0,0,0,1], [0.3, 0.1, 0.1, 0.5])
+    keras_cce = backend.eval(ls.categorical_crossentropy([0,0,0,1], [0.3, 0.1, 0.1, 0.5]))
+    np.testing.assert_almost_equal(my_cce, keras_cce, decimal=5)
+    print("pause")
 
