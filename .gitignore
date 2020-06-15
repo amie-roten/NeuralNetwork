@@ -1,0 +1,11 @@
+figs/
+*.aux
+*.log
+*.tex
+*.gz
+test.wav
+test2.wav
+top_5_models.plk
+top_5_models_2.plk
+top_5_models_4.plk
+experiment_output.txt

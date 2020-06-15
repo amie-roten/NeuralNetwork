@@ -44,21 +44,27 @@ class Layer:
         else:
             self.weights = np.random.rand(self.nodes, input_num) - 0.5
 
-    # Perform forward pass step for this layer.
+
     def forward_pass(self, input):
         self.z = self.weights @ input
         self.activations = self.activation(self.z)
         return self.activations
 
-    # Perform backpropogation step for this
+    def backpropagation(self, next_delta, next_weights):
+        self.delta = np.multiply((next_weights.T @ next_delta),
+                                 self.activation_deriv(self.z))
+
+    def weight_update(self, learning_rate, prev_activations):
+        self.weights = self.weights - learning_rate * \
+                       np.outer(self.delta, prev_activations)
+
+   # Perform backpropogation step for this
     # layer. This process/formula applied to
     # hidden layers only.
-    def backpropagation(self, next_delta, next_weights):
-        self.delta = np.multiply((next_weights.T @ next_delta), self.activation_deriv(self.z))
 
-    # Update weights using errors from backprop.
-    def weight_update(self, learning_rate, prev_activations):
-        self.weights = self.weights - learning_rate * np.outer(self.delta, prev_activations)
+# Update weights using errors from backprop.
+
+    # Perform forward pass step for this layer.
 
 class NeuralNetwork:
     def __init__(self,
