@@ -1,5 +1,10 @@
-import numpy as np
+# Amie Roten
+# CS559: Term Project
+# Utility Functions
+# for Neural Network
+# Implementation
 
+import numpy as np
 
 ####
 ###

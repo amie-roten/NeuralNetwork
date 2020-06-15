@@ -1,0 +1,853 @@
+This is XeTeX, Version 3.14159265-2.6-0.999991 (TeX Live 2019) (preloaded format=xelatex 2020.3.9)  15 JUN 2020 11:01
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**ProjectReport_ARoten.tex
+(./ProjectReport_ARoten.tex
+LaTeX2e <2020-02-02> patch level 5
+L3 programming layer <2020-02-25>
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2019/12/20 v1.4l Standard LaTeX document class
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2019/12/20 v1.4l Standard LaTeX file (size option)
+)
+\c@part=\count163
+\c@section=\count164
+\c@subsection=\count165
+\c@subsubsection=\count166
+\c@paragraph=\count167
+\c@subparagraph=\count168
+\c@figure=\count169
+\c@table=\count170
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen134
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/iftex/iftex.sty
+Package: iftex 2019/11/07 v1.0c TeX engine tests
+))
+\Gm@cnth=\count171
+\Gm@cntv=\count172
+\c@Gm@tempcnt=\count173
+\Gm@bindingoffset=\dimen135
+\Gm@wd@mp=\dimen136
+\Gm@odd@mp=\dimen137
+\Gm@even@mp=\dimen138
+\Gm@layoutwidth=\dimen139
+\Gm@layoutheight=\dimen140
+\Gm@layouthoffset=\dimen141
+\Gm@layoutvoffset=\dimen142
+\Gm@dimlist=\toks16
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/epsfig.sty
+Package: epsfig 2017/06/25 v1.7b (e)psfig emulation (SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2019/11/30 v1.2a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2019/11/30 v1.4a Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: xetex.def on input line 105.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-def/xetex.def
+File: xetex.def 2017/06/24 v5.0h Graphics/color driver for xetex
+))
+\Gin@req@height=\dimen143
+\Gin@req@width=\dimen144
+)
+\epsfxsize=\dimen145
+\epsfysize=\dimen146
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/frontendlayer/tikz.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgf.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfrcs.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common.te
+x
+\pgfutil@everybye=\toks17
+\pgfutil@tempdima=\dimen147
+\pgfutil@tempdimb=\dimen148
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-common-li
+sts.tex))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfutil-latex.def
+\pgfutil@abb=\box45
+(/usr/local/texlive/2019/texmf-dist/tex/latex/ms/everyshi.sty
+Package: everyshi 2001/05/15 v3.00 EveryShipout Package (MS)
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfrcs.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/pgf.revision.tex)
+Package: pgfrcs 2020/01/08 v3.1.5b (3.1.5b)
+))
+Package: pgf 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/basiclayer/pgfcore.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/systemlayer/pgfsys.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys.code.tex
+Package: pgfsys 2020/01/08 v3.1.5b (3.1.5b)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks18
+\pgfkeys@temptoks=\toks19
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks20
+))
+\pgf@x=\dimen149
+\pgf@y=\dimen150
+\pgf@xa=\dimen151
+\pgf@ya=\dimen152
+\pgf@xb=\dimen153
+\pgf@yb=\dimen154
+\pgf@xc=\dimen155
+\pgf@yc=\dimen156
+\pgf@xd=\dimen157
+\pgf@yd=\dimen158
+\w@pgf@writea=\write3
+\r@pgf@reada=\read2
+\c@pgf@counta=\count174
+\c@pgf@countb=\count175
+\c@pgf@countc=\count176
+\c@pgf@countd=\count177
+\t@pgf@toka=\toks21
+\t@pgf@tokb=\toks22
+\t@pgf@tokc=\toks23
+\pgf@sys@id@count=\count178
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgf.cfg
+File: pgf.cfg 2020/01/08 v3.1.5b (3.1.5b)
+)
+Driver file for pgf: pgfsys-xetex.def
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-xetex.de
+f
+File: pgfsys-xetex.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-dvipdfmx
+.def
+File: pgfsys-dvipdfmx.def 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsys-common-p
+df.def
+File: pgfsys-common-pdf.def 2020/01/08 v3.1.5b (3.1.5b)
+)
+\pgfsys@objnum=\count179
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsyssoftpath.
+code.tex
+File: pgfsyssoftpath.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfsyssoftpath@smallbuffer@items=\count180
+\pgfsyssoftpath@bigbuffer@items=\count181
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/systemlayer/pgfsysprotocol.
+code.tex
+File: pgfsysprotocol.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)) (/usr/local/texlive/2019/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: xetex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcore.code.tex
+Package: pgfcore 2020/01/08 v3.1.5b (3.1.5b)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathcalc.code.tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathutil.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathparser.code.tex
+\pgfmath@dimen=\dimen159
+\pgfmath@count=\count182
+\pgfmath@box=\box46
+\pgfmath@toks=\toks24
+\pgfmath@stack@operand=\toks25
+\pgfmath@stack@operation=\toks26
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.code.
+tex
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.basic
+.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.trigo
+nometric.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.rando
+m.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.compa
+rison.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.base.
+code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.round
+.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.misc.
+code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfunctions.integ
+erarithmetics.code.tex)))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmathfloat.code.tex
+\c@pgfmathroundto@lastzeros=\count183
+)) (/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfint.code.tex)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepoints.co
+de.tex
+File: pgfcorepoints.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@picminx=\dimen160
+\pgf@picmaxx=\dimen161
+\pgf@picminy=\dimen162
+\pgf@picmaxy=\dimen163
+\pgf@pathminx=\dimen164
+\pgf@pathmaxx=\dimen165
+\pgf@pathminy=\dimen166
+\pgf@pathmaxy=\dimen167
+\pgf@xx=\dimen168
+\pgf@xy=\dimen169
+\pgf@yx=\dimen170
+\pgf@yy=\dimen171
+\pgf@zx=\dimen172
+\pgf@zy=\dimen173
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathconst
+ruct.code.tex
+File: pgfcorepathconstruct.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@path@lastx=\dimen174
+\pgf@path@lasty=\dimen175
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathusage
+.code.tex
+File: pgfcorepathusage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@shorten@end@additional=\dimen176
+\pgf@shorten@start@additional=\dimen177
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorescopes.co
+de.tex
+File: pgfcorescopes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfpic=\box47
+\pgf@hbox=\box48
+\pgf@layerbox@main=\box49
+\pgf@picture@serial@count=\count184
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoregraphicst
+ate.code.tex
+File: pgfcoregraphicstate.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgflinewidth=\dimen178
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretransform
+ations.code.tex
+File: pgfcoretransformations.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@pt@x=\dimen179
+\pgf@pt@y=\dimen180
+\pgf@pt@temp=\dimen181
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorequick.cod
+e.tex
+File: pgfcorequick.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreobjects.c
+ode.tex
+File: pgfcoreobjects.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepathproce
+ssing.code.tex
+File: pgfcorepathprocessing.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorearrows.co
+de.tex
+File: pgfcorearrows.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfarrowsep=\dimen182
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreshade.cod
+e.tex
+File: pgfcoreshade.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@max=\dimen183
+\pgf@sys@shading@range@num=\count185
+\pgf@shadingcount=\count186
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreimage.cod
+e.tex
+File: pgfcoreimage.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoreexternal.
+code.tex
+File: pgfcoreexternal.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfexternal@startupbox=\box50
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorelayers.co
+de.tex
+File: pgfcorelayers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcoretranspare
+ncy.code.tex
+File: pgfcoretransparency.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorepatterns.
+code.tex
+File: pgfcorepatterns.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/basiclayer/pgfcorerdf.code.
+tex
+File: pgfcorerdf.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleshapes.cod
+e.tex
+File: pgfmoduleshapes.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodeparttextbox=\box51
+)
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmoduleplot.code.
+tex
+File: pgfmoduleplot.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-0-65.sty
+Package: pgfcomp-version-0-65 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@nodesepstart=\dimen184
+\pgf@nodesepend=\dimen185
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/compatibility/pgfcomp-version
+-1-18.sty
+Package: pgfcomp-version-1-18 2020/01/08 v3.1.5b (3.1.5b)
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgffor.sty
+(/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex)
+) (/usr/local/texlive/2019/texmf-dist/tex/latex/pgf/math/pgfmath.sty
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/utilities/pgffor.code.tex
+Package: pgffor 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/math/pgfmath.code.tex)
+\pgffor@iter=\dimen186
+\pgffor@skip=\dimen187
+\pgffor@stack=\toks27
+\pgffor@toks=\toks28
+))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/tikz.cod
+e.tex
+Package: tikz 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/pgflibraryplothan
+dlers.code.tex
+File: pgflibraryplothandlers.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgf@plot@mark@count=\count187
+\pgfplotmarksize=\dimen188
+)
+\tikz@lastx=\dimen189
+\tikz@lasty=\dimen190
+\tikz@lastxsaved=\dimen191
+\tikz@lastysaved=\dimen192
+\tikz@lastmovetox=\dimen193
+\tikz@lastmovetoy=\dimen194
+\tikzleveldistance=\dimen195
+\tikzsiblingdistance=\dimen196
+\tikz@figbox=\box52
+\tikz@figbox@bg=\box53
+\tikz@tempbox=\box54
+\tikz@tempbox@bg=\box55
+\tikztreelevel=\count188
+\tikznumberofchildren=\count189
+\tikznumberofcurrentchild=\count190
+\tikz@fig@count=\count191
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/modules/pgfmodulematrix.cod
+e.tex
+File: pgfmodulematrix.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfmatrixcurrentrow=\count192
+\pgfmatrixcurrentcolumn=\count193
+\pgf@matrix@numberofcolumns=\count194
+)
+\tikz@expandcount=\count195
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarytopaths.code.tex
+File: tikzlibrarytopaths.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryautomata.code.tex
+File: tikzlibraryautomata.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibraryshapes.multipart.code.tex
+File: tikzlibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/libraries/shapes/pgflibrary
+shapes.multipart.code.tex
+File: pgflibraryshapes.multipart.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+\pgfnodepartlowerbox=\box56
+\pgfnodeparttwobox=\box57
+\pgfnodepartthreebox=\box58
+\pgfnodepartfourbox=\box59
+\pgfnodeparttwentybox=\box60
+\pgfnodepartnineteenbox=\box61
+\pgfnodeparteighteenbox=\box62
+\pgfnodepartseventeenbox=\box63
+\pgfnodepartsixteenbox=\box64
+\pgfnodepartfifteenbox=\box65
+\pgfnodepartfourteenbox=\box66
+\pgfnodepartthirteenbox=\box67
+\pgfnodeparttwelvebox=\box68
+\pgfnodepartelevenbox=\box69
+\pgfnodeparttenbox=\box70
+\pgfnodepartninebox=\box71
+\pgfnodeparteightbox=\box72
+\pgfnodepartsevenbox=\box73
+\pgfnodepartsixbox=\box74
+\pgfnodepartfivebox=\box75
+)))
+(/usr/local/texlive/2019/texmf-dist/tex/generic/pgf/frontendlayer/tikz/librarie
+s/tikzlibrarypositioning.code.tex
+File: tikzlibrarypositioning.code.tex 2020/01/08 v3.1.5b (3.1.5b)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2020/01/20 v2.17e AMS math features
+\@mathmargin=\skip49
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks29
+\ex@=\dimen197
+))
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen198
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2016/03/08 v2.02 operator names
+)
+\inf@bad=\count196
+LaTeX Info: Redefining \frac on input line 227.
+\uproot@=\count197
+\leftroot@=\count198
+LaTeX Info: Redefining \overline on input line 389.
+\classnum@=\count199
+\DOTSCASE@=\count266
+LaTeX Info: Redefining \ldots on input line 486.
+LaTeX Info: Redefining \dots on input line 489.
+LaTeX Info: Redefining \cdots on input line 610.
+\Mathstrutbox@=\box76
+\strutbox@=\box77
+\big@size=\dimen199
+LaTeX Font Info:    Redeclaring font encoding OML on input line 733.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 734.
+\macc@depth=\count267
+\c@MaxMatrixCols=\count268
+\dotsspace@=\muskip16
+\c@parentequation=\count269
+\dspbrk@lvl=\count270
+\tag@help=\toks30
+\row@=\count271
+\column@=\count272
+\maxfields@=\count273
+\andhelp@=\toks31
+\eqnshift@=\dimen256
+\alignsep@=\dimen257
+\tagshift@=\dimen258
+\tagwidth@=\dimen259
+\totwidth@=\dimen260
+\lineht@=\dimen261
+\@envbody=\toks32
+\multlinegap=\skip50
+\multlinetaggap=\skip51
+\mathdisplay@stack=\toks33
+LaTeX Info: Redefining \[ on input line 2859.
+LaTeX Info: Redefining \] on input line 2860.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/amsfonts.sty
+Package: amsfonts 2013/01/14 v3.01 Basic AMSFonts support
+\symAMSa=\mathgroup4
+\symAMSb=\mathgroup5
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 98.
+LaTeX Font Info:    Overwriting math alphabet `\mathfrak' in version `bold'
+(Font)                  U/euf/m/n --> U/euf/b/n on input line 106.
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/alltt.sty
+Package: alltt 1997/06/16 v2.0g defines alltt environment
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen262
+\lightrulewidth=\dimen263
+\cmidrulewidth=\dimen264
+\belowrulesep=\dimen265
+\belowbottomsep=\dimen266
+\aboverulesep=\dimen267
+\abovetopsep=\dimen268
+\cmidrulesep=\dimen269
+\cmidrulekern=\dimen270
+\defaultaddspace=\dimen271
+\@cmidla=\count274
+\@cmidlb=\count275
+\@aboverulesep=\dimen272
+\@belowrulesep=\dimen273
+\@thisruleclass=\count276
+\@lastruleclass=\count277
+\@thisrulewidth=\dimen274
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/subcaption.sty
+Package: subcaption 2020/01/22 v1.3d Sub-captions (AR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2020/01/03 v3.4h Customizing captions (AR)
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2020/01/03 v1.8h caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 61.
+\captionmargin=\dimen275
+\captionmargin@=\dimen276
+\captionwidth=\dimen277
+\caption@tempdima=\dimen278
+\caption@indent=\dimen279
+\caption@parindent=\dimen280
+\caption@hangindent=\dimen281
+Package caption Info: Standard document class detected.
+)
+\c@caption@flags=\count278
+\c@continuedfloat=\count279
+)
+\c@subfigure=\count280
+\c@subtable=\count281
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/tools/indentfirst.sty
+Package: indentfirst 1995/11/23 v1.03 Indent first paragraph (DPC)
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2019/05/31 v2.5 Span multiple rows of a table
+\multirow@colwidth=\skip52
+\multirow@cntb=\count282
+\multirow@dima=\skip53
+\bigstrutjot=\dimen282
+)
+(/usr/local/texlive/2019/texmf-dist/tex/latex/l3backend/l3backend-xdvipdfmx.def
+File: l3backend-xdvipdfmx.def 2020-02-23 L3 backend support: xdvipdfmx
+\g__graphics_track_int=\count283
+\l__pdf_internal_box=\box78
+\g__pdf_backend_object_int=\count284
+\g__pdf_backend_annotation_int=\count285
+) (./ProjectReport_ARoten.aux)
+\openout1 = `ProjectReport_ARoten.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 16.
+LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
+6.
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/base/ts1cmr.fd
+File: ts1cmr.fd 2019/12/16 v2.5j Standard LaTeX font definitions
+)
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 16.
+LaTeX Font Info:    ... okay on input line 16.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: xetex
+*geometry* verbose mode - [ preamble ] result:
+* driver: xetex
+* paper: <default>
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(36.135pt, 542.02501pt, 36.135pt)
+* v-part:(T,H,B)=(36.135pt, 722.7pt, 36.135pt)
+* \paperwidth=614.295pt
+* \paperheight=794.96999pt
+* \textwidth=542.02501pt
+* \textheight=722.7pt
+* \oddsidemargin=-36.135pt
+* \evensidemargin=-36.135pt
+* \topmargin=-73.135pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+ABD: EveryShipout initializing macros
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 41.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
+File: umsa.fd 2013/01/14 v3.01 AMS symbols A
+)
+LaTeX Font Info:    Trying to load font information for U+msb on input line 41.
+
+
+(/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsb.fd
+File: umsb.fd 2013/01/14 v3.01 AMS symbols B
+)
+File: figs/layer.png Graphic file (type bmp)
+<figs/layer.png>
+ [1
+
+] [2]
+[3] [4]
+Overfull \hbox (0.73897pt too wide) in paragraph at lines 138--139
+[]\TU/lmr/m/n/10 4. For each layer, going backwards from the previous layer, ca
+ll the aforementioned Layer \TU/lmtt/m/n/10 backpropagation()
+ []
+
+[5] [6]
+File: figs/Boston_Housing_Regression_1_Hidden_Layers_with_8_Nodes_and_Sigmoid_A
+ctivation.png Graphic file (type bmp)
+<figs/Boston_Housing_Regression_1_Hidden_Layers_with_8_Nodes_and_Sigmoid_Activa
+tion.png>
+File: figs/Boston_Housing_Regression_1_Hidden_Layers_with_16_Nodes_and_Sigmoid_
+Activation.png Graphic file (type bmp)
+<figs/Boston_Housing_Regression_1_Hidden_Layers_with_16_Nodes_and_Sigmoid_Activ
+ation.png>
+File: figs/Boston_Housing_Regression_2_Hidden_Layers_with_8_Nodes_and_Sigmoid_A
+ctivation.png Graphic file (type bmp)
+<figs/Boston_Housing_Regression_2_Hidden_Layers_with_8_Nodes_and_Sigmoid_Activa
+tion.png>
+File: figs/Boston_Housing_Regression_2_Hidden_Layers_with_16_Nodes_and_Sigmoid_
+Activation.png Graphic file (type bmp)
+<figs/Boston_Housing_Regression_2_Hidden_Layers_with_16_Nodes_and_Sigmoid_Activ
+ation.png>
+File: figs/Boston_Housing_Regression_1_Hidden_Layers_with_8_Nodes_and_ReLU_Acti
+vation.png Graphic file (type bmp)
+<figs/Boston_Housing_Regression_1_Hidden_Layers_with_8_Nodes_and_ReLU_Activatio
+n.png>
+File: figs/Boston_Housing_Regression_1_Hidden_Layers_with_16_Nodes_and_ReLU_Act
+ivation.png Graphic file (type bmp)
+<figs/Boston_Housing_Regression_1_Hidden_Layers_with_16_Nodes_and_ReLU_Activati
+on.png>
+File: figs/Boston_Housing_Regression_2_Hidden_Layers_with_8_Nodes_and_ReLU_Acti
+vation.png Graphic file (type bmp)
+<figs/Boston_Housing_Regression_2_Hidden_Layers_with_8_Nodes_and_ReLU_Activatio
+n.png>
+File: figs/Boston_Housing_Regression_2_Hidden_Layers_with_16_Nodes_and_ReLU_Act
+ivation.png Graphic file (type bmp)
+<figs/Boston_Housing_Regression_2_Hidden_Layers_with_16_Nodes_and_ReLU_Activati
+on.png>
+File: figs/Boston_Housing_Regression_1_Hidden_Layers_with_8_Nodes_and_Tanh_Acti
+vation.png Graphic file (type bmp)
+<figs/Boston_Housing_Regression_1_Hidden_Layers_with_8_Nodes_and_Tanh_Activatio
+n.png>
+File: figs/Boston_Housing_Regression_1_Hidden_Layers_with_16_Nodes_and_Tanh_Act
+ivation.png Graphic file (type bmp)
+<figs/Boston_Housing_Regression_1_Hidden_Layers_with_16_Nodes_and_Tanh_Activati
+on.png>
+File: figs/Boston_Housing_Regression_2_Hidden_Layers_with_8_Nodes_and_Tanh_Acti
+vation.png Graphic file (type bmp)
+<figs/Boston_Housing_Regression_2_Hidden_Layers_with_8_Nodes_and_Tanh_Activatio
+n.png>
+File: figs/Boston_Housing_Regression_2_Hidden_Layers_with_16_Nodes_and_Tanh_Act
+ivation.png Graphic file (type bmp)
+<figs/Boston_Housing_Regression_2_Hidden_Layers_with_16_Nodes_and_Tanh_Activati
+on.png>
+ [7
+
+]
+File: figs/Cancer_Binary_Classification_1_Hidden_Layers_with_8_Nodes_and_Sigmoi
+d_Activation.png Graphic file (type bmp)
+<figs/Cancer_Binary_Classification_1_Hidden_Layers_with_8_Nodes_and_Sigmoid_Act
+ivation.png>
+File: figs/Cancer_Binary_Classification_1_Hidden_Layers_with_16_Nodes_and_Sigmo
+id_Activation.png Graphic file (type bmp)
+<figs/Cancer_Binary_Classification_1_Hidden_Layers_with_16_Nodes_and_Sigmoid_Ac
+tivation.png>
+File: figs/Cancer_Binary_Classification_2_Hidden_Layers_with_8_Nodes_and_Sigmoi
+d_Activation.png Graphic file (type bmp)
+<figs/Cancer_Binary_Classification_2_Hidden_Layers_with_8_Nodes_and_Sigmoid_Act
+ivation.png>
+File: figs/Cancer_Binary_Classification_2_Hidden_Layers_with_16_Nodes_and_Sigmo
+id_Activation.png Graphic file (type bmp)
+<figs/Cancer_Binary_Classification_2_Hidden_Layers_with_16_Nodes_and_Sigmoid_Ac
+tivation.png>
+
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+File: figs/Cancer_Binary_Classification_1_Hidden_Layers_with_8_Nodes_and_ReLU_A
+ctivation.png Graphic file (type bmp)
+<figs/Cancer_Binary_Classification_1_Hidden_Layers_with_8_Nodes_and_ReLU_Activa
+tion.png>
+File: figs/Cancer_Binary_Classification_1_Hidden_Layers_with_16_Nodes_and_ReLU_
+Activation.png Graphic file (type bmp)
+<figs/Cancer_Binary_Classification_1_Hidden_Layers_with_16_Nodes_and_ReLU_Activ
+ation.png>
+File: figs/Cancer_Binary_Classification_2_Hidden_Layers_with_8_Nodes_and_ReLU_A
+ctivation.png Graphic file (type bmp)
+<figs/Cancer_Binary_Classification_2_Hidden_Layers_with_8_Nodes_and_ReLU_Activa
+tion.png>
+File: figs/Cancer_Binary_Classification_2_Hidden_Layers_with_16_Nodes_and_ReLU_
+Activation.png Graphic file (type bmp)
+<figs/Cancer_Binary_Classification_2_Hidden_Layers_with_16_Nodes_and_ReLU_Activ
+ation.png>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: figs/Cancer_Binary_Classification_1_Hidden_Layers_with_8_Nodes_and_Tanh_A
+ctivation.png Graphic file (type bmp)
+<figs/Cancer_Binary_Classification_1_Hidden_Layers_with_8_Nodes_and_Tanh_Activa
+tion.png>
+File: figs/Cancer_Binary_Classification_1_Hidden_Layers_with_16_Nodes_and_Tanh_
+Activation.png Graphic file (type bmp)
+<figs/Cancer_Binary_Classification_1_Hidden_Layers_with_16_Nodes_and_Tanh_Activ
+ation.png>
+File: figs/Cancer_Binary_Classification_2_Hidden_Layers_with_8_Nodes_and_Tanh_A
+ctivation.png Graphic file (type bmp)
+<figs/Cancer_Binary_Classification_2_Hidden_Layers_with_8_Nodes_and_Tanh_Activa
+tion.png>
+File: figs/Cancer_Binary_Classification_2_Hidden_Layers_with_16_Nodes_and_Tanh_
+Activation.png Graphic file (type bmp)
+<figs/Cancer_Binary_Classification_2_Hidden_Layers_with_16_Nodes_and_Tanh_Activ
+ation.png>
+
+LaTeX Warning: `!h' float specifier changed to `!ht'.
+
+[8]
+File: figs/cancer_PCA.png Graphic file (type bmp)
+<figs/cancer_PCA.png>
+ [9]
+File: figs/Iris_Multiclass_Classification_1_Hidden_Layers_with_8_Nodes_and_Sigm
+oid_Activation.png Graphic file (type bmp)
+<figs/Iris_Multiclass_Classification_1_Hidden_Layers_with_8_Nodes_and_Sigmoid_A
+ctivation.png>
+File: figs/Iris_Multiclass_Classification_1_Hidden_Layers_with_16_Nodes_and_Sig
+moid_Activation.png Graphic file (type bmp)
+<figs/Iris_Multiclass_Classification_1_Hidden_Layers_with_16_Nodes_and_Sigmoid_
+Activation.png>
+File: figs/Iris_Multiclass_Classification_2_Hidden_Layers_with_8_Nodes_and_Sigm
+oid_Activation.png Graphic file (type bmp)
+<figs/Iris_Multiclass_Classification_2_Hidden_Layers_with_8_Nodes_and_Sigmoid_A
+ctivation.png>
+File: figs/Iris_Multiclass_Classification_2_Hidden_Layers_with_16_Nodes_and_Sig
+moid_Activation.png Graphic file (type bmp)
+<figs/Iris_Multiclass_Classification_2_Hidden_Layers_with_16_Nodes_and_Sigmoid_
+Activation.png>
+File: figs/Iris_Multiclass_Classification_1_Hidden_Layers_with_8_Nodes_and_ReLU
+_Activation.png Graphic file (type bmp)
+<figs/Iris_Multiclass_Classification_1_Hidden_Layers_with_8_Nodes_and_ReLU_Acti
+vation.png>
+File: figs/Iris_Multiclass_Classification_1_Hidden_Layers_with_16_Nodes_and_ReL
+U_Activation.png Graphic file (type bmp)
+<figs/Iris_Multiclass_Classification_1_Hidden_Layers_with_16_Nodes_and_ReLU_Act
+ivation.png>
+File: figs/Iris_Multiclass_Classification_2_Hidden_Layers_with_8_Nodes_and_ReLU
+_Activation.png Graphic file (type bmp)
+<figs/Iris_Multiclass_Classification_2_Hidden_Layers_with_8_Nodes_and_ReLU_Acti
+vation.png>
+File: figs/Iris_Multiclass_Classification_2_Hidden_Layers_with_16_Nodes_and_ReL
+U_Activation.png Graphic file (type bmp)
+<figs/Iris_Multiclass_Classification_2_Hidden_Layers_with_16_Nodes_and_ReLU_Act
+ivation.png>
+File: figs/Iris_Multiclass_Classification_1_Hidden_Layers_with_8_Nodes_and_Tanh
+_Activation.png Graphic file (type bmp)
+<figs/Iris_Multiclass_Classification_1_Hidden_Layers_with_8_Nodes_and_Tanh_Acti
+vation.png>
+File: figs/Iris_Multiclass_Classification_1_Hidden_Layers_with_16_Nodes_and_Tan
+h_Activation.png Graphic file (type bmp)
+<figs/Iris_Multiclass_Classification_1_Hidden_Layers_with_16_Nodes_and_Tanh_Act
+ivation.png>
+File: figs/Iris_Multiclass_Classification_2_Hidden_Layers_with_8_Nodes_and_Tanh
+_Activation.png Graphic file (type bmp)
+<figs/Iris_Multiclass_Classification_2_Hidden_Layers_with_8_Nodes_and_Tanh_Acti
+vation.png>
+File: figs/Iris_Multiclass_Classification_2_Hidden_Layers_with_16_Nodes_and_Tan
+h_Activation.png Graphic file (type bmp)
+<figs/Iris_Multiclass_Classification_2_Hidden_Layers_with_16_Nodes_and_Tanh_Act
+ivation.png>
+File: figs/iris_PCA.png Graphic file (type bmp)
+<figs/iris_PCA.png>
+ [10]
+File: figs/iris_conf.png Graphic file (type bmp)
+<figs/iris_conf.png>
+ [11]
+File: figs/PCA_emotions.png Graphic file (type bmp)
+<figs/PCA_emotions.png>
+File: figs/Emotions_Initial_Best_Conf.png Graphic file (type bmp)
+<figs/Emotions_Initial_Best_Conf.png>
+ [12]
+File: figs/Emotions_Initial_Best_Cost.png Graphic file (type bmp)
+<figs/Emotions_Initial_Best_Cost.png>
+ [13]
+File: figs/Emotions_Multiclass_Classification_20_Hidden_Layers_with_16_Nodes_Ta
+nh_Activation_and_0.1_Learning_Rate.png Graphic file (type bmp)
+<figs/Emotions_Multiclass_Classification_20_Hidden_Layers_with_16_Nodes_Tanh_Ac
+tivation_and_0.1_Learning_Rate.png>
+File: figs/Emotions_Multiclass_Classification_20_Hidden_Layers_with_16_Nodes_Ta
+nh_Activation_and_0.01_Learning_Rate.png Graphic file (type bmp)
+<figs/Emotions_Multiclass_Classification_20_Hidden_Layers_with_16_Nodes_Tanh_Ac
+tivation_and_0.01_Learning_Rate.png>
+File: figs/Emotions_Multiclass_Classification_20_Hidden_Layers_with_16_Nodes_Ta
+nh_Activation_and_0.005_Learning_Rate.png Graphic file (type bmp)
+<figs/Emotions_Multiclass_Classification_20_Hidden_Layers_with_16_Nodes_Tanh_Ac
+tivation_and_0.005_Learning_Rate.png>
+File: figs/Emotions_Multiclass_Classification_20_Hidden_Layers_with_16_Nodes_Ta
+nh_Activation_and_0.001_Learning_Rate.png Graphic file (type bmp)
+<figs/Emotions_Multiclass_Classification_20_Hidden_Layers_with_16_Nodes_Tanh_Ac
+tivation_and_0.001_Learning_Rate.png>
+File: figs/Emotions_Multiclass_Classification_25_Hidden_Layers_with_24_Nodes_Ta
+nh_Activation_and_0.1_Learning_Rate.png Graphic file (type bmp)
+<figs/Emotions_Multiclass_Classification_25_Hidden_Layers_with_24_Nodes_Tanh_Ac
+tivation_and_0.1_Learning_Rate.png>
+ [14]
+File: figs/final_conf_raw.png Graphic file (type bmp)
+<figs/final_conf_raw.png>
+File: figs/final_conf_folded.png Graphic file (type bmp)
+<figs/final_conf_folded.png>
+File: figs/final_analysis_best.png Graphic file (type bmp)
+<figs/final_analysis_best.png>
+ [15]
+Overfull \hbox (6.55112pt too wide) in paragraph at lines 604--605
+[]$[]$ \TU/lmr/m/n/10 https://towardsdatascience.com/weight-initialization-in-n
+eural-networks-a-journey-from-the-basics-to-kaiming-954fb9b47c79 
+ []
+
+[16] (./ProjectReport_ARoten.aux) ) 
+Here is how much of TeX's memory you used:
+ 14581 strings out of 479805
+ 318605 string characters out of 5893181
+ 547417 words of memory out of 5000000
+ 31405 multiletter control sequences out of 15000+600000
+ 534101 words of font info for 40 fonts, out of 8000000 for 9000
+ 1348 hyphenation exceptions out of 8191
+ 60i,14n,66p,1458b,436s stack positions out of 5000i,500n,10000p,200000b,80000s
+
+Output written on ProjectReport_ARoten.pdf (16 pages).
