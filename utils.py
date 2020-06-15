@@ -37,10 +37,9 @@ def identity(x):
 
 # Use for regression, single output
 # with identity function as activation.
-def MSE(y, y_hat):
-    all_sq_errors = [0.5 * ((y_hat_i - y_i) ** 2)\
-                     for y_i, y_hat_i in zip(y, y_hat)]
-    return (1 / len(y)) * sum(all_sq_errors)
+def SSE(y, y_hat):
+    #print(y_hat - y)
+    return 0.5 * sum(((y_hat - y) ** 2))
 
 # Use for binary classification, single
 # output with sigmoid activation.
@@ -61,7 +60,7 @@ def multiclass_crossentropy(y, y_hat):
 # Derivatives of each function.
 
 def tanh_deriv(x):
-    return 1 - tanh(x)^2
+    return 1 - (tanh(x)**2)
 
 def sigmoid_deriv(x):
     return sigmoid(x)*(1-sigmoid(x))
@@ -75,7 +74,7 @@ def softmax_deriv(x):
 def identity_deriv(x):
     return np.ones(x.shape[1])
 
-def MSE_deriv(y, y_hat):
+def SSE_deriv(y, y_hat):
     return (y_hat - y)
 
 def binary_crossentropy_deriv(y, y_hat):
@@ -113,7 +112,7 @@ if __name__ == "__main__":
     my_mean_bce = np.mean(binary_crossentropy(y, y_hat))
     keras_mean_bce = backend.eval(ls.binary_crossentropy(y, y_hat))
     np.testing.assert_almost_equal(my_mean_bce, keras_mean_bce, decimal=5)
-    my_cce = categorical_crossentropy([0,0,0,1], [0.3, 0.1, 0.1, 0.5])
+    my_cce = multiclass_crossentropy([0,0,0,1], [0.3, 0.1, 0.1, 0.5])
     keras_cce = backend.eval(ls.categorical_crossentropy([0,0,0,1], [0.3, 0.1, 0.1, 0.5]))
     np.testing.assert_almost_equal(my_cce, keras_cce, decimal=5)
     print("pause")
