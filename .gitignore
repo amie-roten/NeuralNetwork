@@ -5,7 +5,11 @@ figs/
 *.gz
 test.wav
 test2.wav
-top_5_models.plk
-top_5_models_2.plk
-top_5_models_4.plk
+top_5_models.pkl
+top_5_models_2.pkl
+top_5_models_4.pkl
 experiment_output.txt
+ProjectNotes_ARoten.pdf
+.gitignore
+.idea/
+
