@@ -303,6 +303,7 @@ def multiclass_classification_experiment():
             print("Test classification accuracy:", class_error, "\n\n")
 
 
+# A number of experiments using complex dataset.
 def emotions_experiment():
     corpus = data.Corpus()
     if "split_genders":
