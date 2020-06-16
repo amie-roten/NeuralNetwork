@@ -1,5 +1,9 @@
-This is my final project for OHSU's CS559 Machine Learning Course.
+This was written as a final project for OHSU's CS559 Machine
+Learning Course.
 
 A quick note, if you'd like to run the code or the experiments,
 you'll need to make a 'figs' subdirectory, or the code will be
-unhappy, if you want to visualize the train/validate trajectories.
+unhappy.
+
+The slides for the associated presentation can be found at this
+link: https://docs.google.com/presentation/d/1zTrK-6vO6wWNmIkS-if4Pm7C7nydH2u2569DfAoKALc/edit?usp=sharing
